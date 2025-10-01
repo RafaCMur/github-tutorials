@@ -43,6 +43,12 @@ The token is stored in Windows Credential Manager and will not be asked again.
 ### 5) Multi-account setup
 
 - Always include the username in the URL (`https://USER@github.com/...`).
+
+```bash
+git remote set-url origin https://<user>@github.com/<user>/<repo>.git
+
+```
+
 - Enable this so credentials are stored per repo:
 
 ```bash
