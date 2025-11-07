@@ -1,0 +1,67 @@
+## Create
+
+```bash
+# macOS/Linux
+python3 -m venv .venv
+# Windows
+python -m venv .venv
+
+```
+
+## Activate
+
+```bash
+# macOS/Linux
+source .venv/bin/activate
+# Windows PowerShell
+.\.venv\Scripts\Activate.ps1
+# Windows cmd
+.\.venv\Scripts\activate.bat
+
+```
+
+## Check it’s active
+
+- Your prompt shows `(.venv)`
+- Run `which python` (Mac/Linux) or `where python` (Windows) — path should point inside `.venv`
+
+## Install packages
+
+```bash
+python -m pip install --upgrade pip
+pip install numpy pandas
+
+```
+
+## Run your script
+
+```bash
+python main.py
+
+```
+
+## Save dependencies
+
+```bash
+pip freeze > requirements.txt
+
+```
+
+## Re-install later
+
+```bash
+pip install -r requirements.txt
+
+```
+
+## Deactivate
+
+```bash
+deactivate
+
+```
+
+## VS Code shortcut
+
+- Press **Ctrl+Shift+P → “Python: Select Interpreter” → pick `.venv`**
+- The integrated terminal should auto-activate (`(.venv)` appears).
